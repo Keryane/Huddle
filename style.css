@@ -1,0 +1,257 @@
+body{
+background-color: hsl(214, 64%, 98%);
+margin:0 0;
+overflow-x: hidden;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+td{
+    font-family: 'Poppins', sans-serif;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    
+}
+
+.header{
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.btn_1{
+background-color: hsl(214, 64%, 98%);
+color: hsl(265, 100%, 66%);
+width: 180px;
+height: 50px;
+border-radius: 3px;
+border:none;
+box-shadow: 5px 5px 10px hsl(265, 100%, 66%);
+font-size: 16px;
+}
+
+.btn_2{
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(214, 64%, 98%);
+    width: 300px;
+    height: 60px;
+    border-radius: 3px;
+    border:none;
+    box-shadow: 5px 5px 10px hsl(322, 100%, 66%);
+    font-size: 16px;
+}
+.btn_3{
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(214, 64%, 98%);
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    border:none;    
+    font-size: 16px;
+
+}
+
+.carre1{
+    
+    width: 40%;
+    height: 900px;
+    background-image: linear-gradient(hsl(265, 100%, 66%) , hsl(322, 100%, 66%));
+    border-radius:50px;
+    transform: rotate(45deg)    ;
+    padding-left: 50%;
+    z-index: -1;
+    position: absolute;
+    top:-200px;
+    right:-30%;
+}
+
+
+.mainContent{
+ margin-top: 15 0px;
+ text-align: center;
+ position: relative;
+}
+
+.carre2{
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+    border-radius:50px;
+    z-index: -2;
+    position: absolute;
+    top: 200px;
+    transform: rotate(160deg);
+    
+
+}
+.mainContent p{
+width: 40%;
+margin-left:30%;
+color:hsl(208, 11%, 55%);
+}
+
+.secondContent{
+    display: flex;
+   
+}
+
+.secondContent p{
+    width: 50%;
+    color:hsl(208, 11%, 55%);
+}
+ .secondContent img{
+     width: 30%;
+     height: 50vh;
+     margin-top: 200px;
+     margin-left: 300px;
+     
+ }
+ .figcaption{
+     display: flex;
+     flex-direction: column;
+    margin-left:300px;
+    margin-top: 200px;
+ }
+
+.thirdContent{
+    background-color: white;
+    width: 40%;
+    height: 40vh;
+    margin-left: 30%;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px hsl(265, 100%, 66%);
+    margin-bottom: 200px;
+    margin-top:200px;
+}
+
+.thirdContent h2{
+    padding-top: 50px;
+    font-size:37px;
+}
+
+.thirdContent p{
+    color:hsl(208, 11%, 55%);
+    margin-bottom: 60px;
+}
+
+.footer{
+    background-color: hsl(192, 100%, 9%);
+    color:white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left{
+    padding-top:30px;
+}
+.rightside{
+    width: 25%;
+    text-align: right;
+}
+table{
+    margin-top: 30px;
+}
+
+.copyright{
+    margin-top: 10px;
+    font-size:12px;
+}
+
+/* RESPONSIVE SMALL SCREEN */
+
+@media(max-width: 992px){
+    .carre1{
+        display: none;
+    }
+    .carre2{
+        display: none;
+    }
+    .mainContent img{
+        margin-top: 50px;
+        margin-left: 10%;
+        max-width: 80%;
+    }
+    .header img{
+        width: 60%;
+    }
+    .btn_1{
+        background-color: hsl(322, 100%, 66%);
+        color: hsl(214, 64%, 98%);
+        min-width: 30%;
+        height: 40px;
+        border-radius: 3px;
+        border:none;
+        box-shadow: 5px 5px 10px hsl(322, 100%, 66%);
+        font-size: 16px;
+        margin-left: 10%;
+    }
+
+    h2{
+        padding:10px;
+    }
+
+    .mainContent p{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .btn_2{
+        width: 60%;
+        margin-bottom:30px;
+    }
+    .secondContent{
+        display: block;
+    }
+    .secondContent img{
+        width: 80%;
+        margin-left: 10%;
+        margin-top:80px;
+    }
+    .figcaption{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top:50px;
+    }
+
+    .first p{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .thirdContent{
+        width: 80%;
+        height: fit-content;
+        margin-top:50px;
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+
+    .thirdContent P{
+        padding: 5px;
+        margin-bottom:10px;
+    }
+
+    .footer{
+        display:none;
+    }
+}
+
+
